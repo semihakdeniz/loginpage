@@ -1,0 +1,476 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'fontello';
+    src: url('./font/fontello.eot?93996638');
+    src: url('./font/fontello.eot?93996638#iefix') format('embedded-opentype'),
+         url('./font/fontello.woff?93996638') format('woff'),
+         url('./font/fontello.ttf?93996638') format('truetype'),
+         url('./font/fontello.svg?93996638#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+.note-animation{
+    position: absolute;
+    background: transparent;
+    font-family: "fontello";
+    z-index: -10;
+    animation: animate_note linear infinite;
+}
+@keyframes animate_note
+{
+    0% {opacity: 0; transform:translateY(-100px);transform:translateX(-20vh);}
+    10% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0;transform:translateY(calc(100vh));transform:translateY(calc(100vh));}
+}
+.iti__country-list {
+    top:100%;
+    width: 240px;
+    border-radius: 15px;
+    z-index: 5 !important;
+  }
+  
+  .levla-icon-button {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    background: transparent;
+    border: none;
+    line-height: 1em;
+   
+    margin-left: .2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg,#3B503D,rgb(21, 34, 22));
+    position: relative;
+}
+.noselect_text {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+.flex-center-row{ 
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.flex-center-col{ 
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.animation33{
+    transition: ease-out 0.33s;
+}
+.animation44{
+    transition: ease-out 0.8s;
+}
+
+.description_span{
+    background: #F1EDB3;
+    width: 50vw;
+    height: 75vh;
+    border-left: 1px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-radius: 50px;
+    margin-right: 20px;
+    
+    box-shadow: -2px 2px 5px #06fad6,-2px -2px 5px #06fad6;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+.description_span:hover
+{
+    width: 55vw;
+    height: 55vh ;
+    box-shadow: 0 0 30px #06fad6;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.login_form{
+    /* background: #f1edb3; */
+    width: 300px;
+    height: 500px;
+    min-width: 300px;
+    border-radius: 50px;
+    /* border: 1px solid; */
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(180deg,#fffbbd,#b3af85);
+    /* box-shadow: 0 0 10px #06fad6; */
+    position: relative;
+}
+.login_form:before{
+    content: '';
+    position: absolute;
+    top:7px;
+    left: 7px;
+    right: 7px;
+    bottom: 7px;
+    border-radius: 50px;
+    background: linear-gradient(180deg,#dfdaa5,#fffbbd);
+
+}
+.small-description-area, .form_radio_field, .form_inputs .email_field,
+.form_inputs .username_field, .login_button_field, .forgot_password,
+.social-login-span,.password_field_items, .js-validation-error{
+    z-index: 1;
+}
+.login_form:hover{
+    width: 320px;
+    height: 520px ;
+    /* box-shadow: 0 0 30px #06fad6; */
+}
+.login_form:hover .form_title_section .form_title_section{
+    font-size: 33px;
+    margin-top: 8px;
+}
+.login_form .form_title_section{
+    margin-top: 30px;
+    height: 50px;
+	perspective: 1000;
+}
+.login_form .form_title_section .text-container{
+    position: relative;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+.login_form .form_title_section .text-container .front{
+	z-index: 2;
+	backface-visibility: hidden;
+	position: absolute;
+	top: -19.5px;
+	left: -100px;
+    width: 200px;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #464948c1;
+    text-align: center;
+}
+.login_form .form_title_section .text-container .back{
+    transform: rotate3d(0,45,45,180deg);
+	backface-visibility: hidden;
+	position: absolute;
+	top: -19.5px;
+	left: -100px;
+    width: 200px;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #464948c1;
+    text-align: center;
+}
+.login_form .form_radio_field{
+    height: 40px;
+}
+.login_form .form_radio_field label{
+    padding: 0.05rem 0.6rem;
+    background:linear-gradient(#efefef,#C8CF94);
+    color: #666;
+    font-size: 16px;
+    border: 1px solid;
+    box-shadow: 0 0 5px #0b0d0db8;
+}
+
+.login_form .form_radio_field label:last-of-type{
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+.login_form .form_radio_field label:first-of-type{
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.login_form .form_radio_field input[type="radio"]:checked + label{
+    background:linear-gradient(#C8CF94,#efefef);
+    color: black;
+}
+.login_form .form_radio_field :hover + label
+{
+    font-size: 20px;
+    box-shadow: 0 0 15px #0b0d0d9e;
+}
+
+.login_form .form_inputs{
+    height: 40px;
+}
+.login_form .form_inputs input{
+    text-align: center;
+    border-radius: 13px;
+    font-size: 20px;
+    width: 200px;
+    height: 35px;
+    border: none;
+    box-shadow: 0px 3px 1px #b3af85;
+    color: rgba(0, 0, 0, 0.751);
+    background: linear-gradient(180deg,#0000001a,#fffbbd);
+}
+
+.login_form .form_inputs input:hover{
+    font-size: 24px;
+    outline: none;
+}
+.login_form .form_inputs input:focus{
+    font-size: 24px;
+    width: 250px;
+    cursor: default;
+    outline: none;
+}
+.login_form .password_field_items{
+    height: 45px;
+    
+}
+.login_form .password_field_items .password_field{
+    text-align: center;
+    border-radius: 13px;
+    font-size: 20px;
+    width: 200px;
+    height: 35px;
+    font-family: "fontello";
+    border: none;
+    box-shadow: 0px 3px 1px #b3af85;
+    background: linear-gradient(180deg,#0000001a,#fffbbd);
+    outline: none;
+    color: rgba(0, 0, 0, 0.751);
+}
+.login_form .password_field_items .levla-icon-button{
+    position: absolute;
+    margin-right: -165px;
+    font-size: 20px;
+}
+.login_form .password_field_items:hover .password_field{
+    font-size: 24px;
+}
+.login_form .password_field_items:hover .levla-icon-button{
+    font-size: 23px;
+    margin-right: -160px;
+}
+.login_form .password_field_items .password_field:focus {
+    font-size: 18px;
+    width: 250px;
+    cursor: default;
+}
+.login_form .password_field_items .password_field:focus + .levla-icon-button{
+    margin-right: -210px;
+}
+
+.login_form .remember_me{
+    margin-top: 15px;
+    height: 20px;
+
+}
+
+.login_form .remember_me .remember_me_child{
+    border-radius: 13px;
+    height: 25px;
+    width: 50%;
+    z-index: 1;
+}
+.login_form .remember_me .remember_me_child .checkbox_check_icon{
+    font-family: "fontello";
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    transform: translateX(-29px) translateY(-5px) ;
+}
+.login_form .remember_me .remember_me_child input{
+    appearance: none;
+    background: rgba(0, 128, 0, 0.138);
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    border: 1px solid;
+   }
+.login_form .remember_me .remember_me_child label{
+    font-size: 15px;
+}
+.login_form .remember_me:hover .remember_me_child label{
+    font-size: 18px;
+}
+.login_form .remember_me:hover .remember_me_child span{
+    transform: translateX(-36px) translateY(-5px);
+}
+.login_form .remember_me:hover .remember_me_child{
+    background: linear-gradient(180deg,#0000001a,#fffbbd);
+    box-shadow: 0 4px 4px #4d4f4f9c;
+}
+
+.login_form .forgot_password{
+    height: 30px;
+    
+}
+.login_form .forgot_password_child{
+    border-radius: 13px;
+    width: 60%;
+}
+
+.login_form .forgot_password_child:hover {
+    font-size: 110%;
+    background: linear-gradient(180deg,#0000001a,#fffbbd);
+    box-shadow: 0 4px 4px #4d4f4f9c;
+}
+
+.login_form .login_button_field{
+    height: 65px;
+}
+
+.login_form .login_button{
+    width: 200px;
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: 13px;
+    background:linear-gradient(#efefef,#C8CF94);
+    height: 40px;
+}
+.login_form .login_button:hover{
+    font-size: x-large;
+    box-shadow: 0 0 10px #0b0d0d48;
+    height: 40px;
+    width: 215px;
+}
+.login_form .or_register_child
+{
+    border-radius: 13px;
+    width: 60%;
+    height: 25px;
+}
+.login_form .or_register_child:hover {
+    font-size: 110%;background: 
+    linear-gradient(180deg,#0000001a,#fffbbd);
+    box-shadow: 0 4px 4px #4d4f4f9c;
+}
+
+.social-login-span{
+    height: 175px;
+    font-size: 14px;
+}
+.social-login-span .login_with_google{
+    background: gainsboro;
+    border-radius: 5px;
+    width: 60%;
+    height: 28px;
+    border: 2px solid white;
+    box-shadow: 0 0 5px #0b0d0d71;
+    outline: 2px solid black;
+    font-weight: bold;
+
+}
+.social-login-span .login_with_google:hover{
+    height: 28px;
+    width: 70%;
+    font-size: 17px;
+    box-shadow: 0 0 10px #0b0d0d71;
+}
+.social-login-span .login_with_google:hover button{
+    font-size: 17px;
+}
+.social-login-span .login_with_apple{
+    margin-top: 5px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    width: 60%;
+    height: 28px;
+    border: 2px solid;
+    outline: 2px solid black;
+    box-shadow: 0 0 5px #0b0d0d71;
+    font-weight: bold;
+}
+.social-login-span .login_with_apple button{
+    color: white;
+}
+.social-login-span .login_with_apple label{
+    color: white;
+}
+
+.social-login-span .login_with_apple:hover{
+    height: 28px;
+    width: 70%;
+    font-size: 17px;
+    box-shadow: 0 0 10px #0b0d0d71;
+}
+.social-login-span .login_with_apple:hover button{
+    font-size: 17px;
+}
+.social-login-span .login_with_facebook{
+    margin-top: 5px;
+    background: blue;
+    color: white;
+    border-radius: 5px;
+    width: 60%;
+    height: 29px;
+    border: 2px solid;
+    outline: 2px solid blue;
+    box-shadow: 0 0 5px #0b0d0d71;
+    font-weight: bold;
+}
+.social-login-span .login_with_facebook button{
+    color: white;
+}
+.social-login-span .login_with_facebook:hover{
+    height: 29px;
+    width: 70%;
+    font-size: 17px;
+    box-shadow: 0 0 10px #0b0d0d71;
+}
+.social-login-span .login_with_facebook:hover button{
+    font-size: 17px;
+}
+.social-login-span .login_with_twitter{
+    margin-top: 5px;
+    background: rgb(0, 191, 255);
+    color: white;
+    border-radius: 5px;
+    width: 60%;
+    height: 28px;
+    border: 2px solid;
+    outline: 2px solid rgb(0, 191, 255);
+    box-shadow: 0 0 5px #0b0d0d71;
+    font-weight: bold;
+}
+.social-login-span .login_with_twitter button{
+    color: white;
+}
+.social-login-span .login_with_twitter:hover{
+    height: 28px;
+    width: 70%;
+    font-size: 17px;
+    box-shadow: 0 0 10px #0b0d0d71;
+    cursor: progress;
+}
+.social-login-span .login_with_twitter:hover button{
+    font-size: 17px;
+}
+
+.js-validation-error{
+    color: red;
+}

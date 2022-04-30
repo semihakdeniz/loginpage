@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+</head>
+<body>
+    <form class="login_form animation33" show_type="login">
+        <div class="form_title_section flex-center-col animation44">
+            <div class="text-container">
+                <div class="front">
+                    <label class="noselect_text">Giriş Yap</label>
+                </div>
+                <div class="back">
+                    <label class="noselect_text">Kayıt Ol</label>
+                </div>
+            </div>
+        </div>
+        <div class="small-description-area flex-center-row">
+            <span class="noselect_text">-</span>
+            <label class="noselect_text"></label>
+        </div>
+        <div class="form_radio_field flex-center-row">
+            <input class="toggle-user-section check_ready_to_login" type="radio" name="user_property_select" id="username" checked hidden>
+            <label for="username" class="user_property_select_label cursor-pointer animation33 noselect_text" id="username_cb_label">Kullanıcı Adı</label>
+            <input class="toggle-user-section check_ready_to_login" type="radio" name="user_property_select" id="email" hidden>
+            <label for="email" class="user_property_select_label cursor-pointer animation33 noselect_text" id="username_cb_label">Email</label>
+            <input class="toggle-user-section check_ready_to_login" type="radio" name="user_property_select" id="phone" hidden>
+            <label for="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class="user_property_select_label cursor-pointer animation33 noselect_text" id="username_cb_label">Telefon</label>
+        </div>
+        <div class="form_inputs flex-center-col">
+            <input type="text" class="username_field cursor-pointer animation33" placeholder="Kullanıcı Adı">
+            <input type="text" class="email_field cursor-pointer animation33" placeholder="Email" hidden>
+            <input type="tel" class="phone_field cursor-pointer animation33"  id=phone_input name=phone_input hidden>
+        </div>
+        <div class="password_field_items normal-password flex-center-row">
+            <input type="password" class="password_field cursor-pointer check_ready_to_login animation33" placeholder="Şifre" name="password" id="password-field-normal">
+            <span toggle="#password-field-normal" class="levla-icon-button toggle-password cursor-pointer animation33 noselect_text">&#x2030;</span>
+        </div>
+        <div class="password_field_items confirm_password flex-center-row">
+            <input type="password" class="password_field cursor-pointer check_ready_to_login animation33" placeholder="Şifreyi Onayla" name="password" id="password-field-confirm">
+            <span toggle="#password-field-confirm" class="levla-icon-button toggle-password cursor-pointer animation33 noselect_text">&#x2030;</span>
+        </div>
+        <div class="remember_me flex-center-row">
+            <div class="remember_me_child flex-center-row animation33 cursor-pointer" id="test2" >
+                <span class="checkbox_check_icon cursor-pointer animation33" id="check_icon_remember_me" hidden>&#x2022;</span>
+                <input class="checkbox_cb animation33 cursor-pointer" type="checkbox" value="remember_me" id="remember_me_cb" name="remember_me_cb" custom_check="false">
+                <label class="cursor-pointer noselect_text animation33" id="test1">Beni Hatırla</label>
+            </div>
+        </div>
+        <div class="forgot_password flex-center-row">
+            <div class="forgot_password_child flex-center-row animation33 cursor-pointer" href="#">
+                <span class="levla-icon-button cursor-pointer animation33" id="forgot_password_button">&#x2032;</span>
+                <label class="cursor-pointer noselect_text" for="forgot_password_button">Şifremi Unuttum</label>
+            </div>
+        </div>
+        <div class="login_button_field flex-center-col">
+            <button class="login_button animation33 cursor-pointer" type="button" >Otrurum Aç</button>
+            <div class="or_register_child flex-center-row animation33 cursor-pointer" >
+                <span class="levla-icon-button animation33 cursor-pointer" id="or_register_button">&#x2033;</span>
+                <label class="cursor-pointer noselect_text" for="or_register_button">Kayıt Ol</label>
+            </div>
+        </div>
+        <div class="social-login-span flex-center-col">
+            <div class="login_with_google flex-center-row cursor-pointer animation44">
+                <button class="levla-icon-button cursor-pointer animation44">&#x2026;</button>
+                <label class="cursor-pointer animation44" for="login_with_google_button">Google hesabıyla giriş</label>
+            </div>
+            <div class="login_with_apple flex-center-row animation44">
+                <button class="levla-icon-button animation44">&#x2027;</button>
+                <label class="cursor-pointer animation44 noselect_text" for="login_with_apple_button animation44">Apple hesabıyla giriş</label>
+            </div>
+            <div class="login_with_facebook flex-center-row animation44">
+                <button class="levla-icon-button animation44">&#x2029;</button>
+                <label class="cursor-pointer animation44 noselect_text" for="login_with_facebook_button animation44">Facebook hesabıyla giriş</label>
+            </div>
+            <div class="login_with_twitter flex-center-row animation44">
+                <button class="levla-icon-button animation44">&#x2028;</button>
+                <label class="cursor-pointer animation44 noselect_text" for="login_with_twitter_button animation44">Twitter hesabıyla giriş</label>
+            </div>
+        </div>
+    </form>
+
+</body>
+
+
+<script src="scripts.js"></script>
+</html>
